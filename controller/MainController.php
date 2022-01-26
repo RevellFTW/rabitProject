@@ -1,6 +1,26 @@
 <?php
 
 include ('dao/UserDAO.php');
+include ('dao/AdDAO.php');
+
+
+
+function listUsers(){
+    $db = connect();
+    getUsers($db);
+
+}
+function listAds(){
+    $db = connect();
+    getAds($db);
+}
+
+function connect(){
+    $servername = 'localhost';
+    $username = 'root';
+    $password = "";
+    return new mysqli($servername, $username, $password, 'advertisement');
+}
 
 function redirect($url) {
     ob_start();
@@ -9,16 +29,8 @@ function redirect($url) {
     die();
 }
 
-function listUsers(){
-    $servername = 'localhost';
-    $username = 'root';
-    $password = "";
-    $conn = new mysqli($servername, $username, $password, 'advertisement');
-    if((getUsers($conn)) == 'empty'){
-        redirect('index.php');
-    } else {
-        getUsers($conn);
-    }
 
-}
+
+
+
 ?>

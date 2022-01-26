@@ -1,0 +1,44 @@
+a {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle
+}
+
+
+div {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #04AA6D;
+    color: white;
+
+    margin: 18px 0;
+
+    cursor: pointer;
+    /*width: 30%;*/
+    opacity: 0.9;
+    height: 10em;
+    position: relative
+}
+
+div:hover {
+    opacity:1;
+}
+
+
+div p {
+    text-align: center;
+    vertical-align: center;
+    margin: 0;
+
+    top: 50%;
+    transform: translate(0, -50%) }
+html, body {
+
+    /*oldal a kepernyo teljes szelessegeben jelenik meg*/
+    width:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+}
