@@ -1,10 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$conn = new mysqli($servername, $username, $password);
-
+include 'controller/MainController.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +9,6 @@ $conn = new mysqli($servername, $username, $password);
     <title>Title</title>
 </head>
 <body>
-<h1>USERS</h1>
-<h2>ADVERTISEMENTS</h2>
+<?php listUsers(); ?>
 </body>
 </html>
