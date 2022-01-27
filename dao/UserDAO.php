@@ -1,5 +1,4 @@
 <?php
-
     function getUsers($conn)
     {
         $sql = 'SELECT * FROM users';
@@ -9,13 +8,15 @@
         }
         else{
             ?>
-            <ul>
-                <?php
-                while($row = mysqli_fetch_assoc($res)){
-                    ?>
-                    <li><?php echo $row['name'] ?></li><?php
-                }?>
-            </ul>
+            <table>
+                <tbody><?php
+                while($row = mysqli_fetch_assoc($res) ){?>
+                    <tr>
+                        <td><a><?php echo $row['name']?></a></td>
+                    </tr>
+                <?php } ?>
+                </tbody>
+            </table>
             <?php
         }
     }

@@ -1,7 +1,4 @@
-<?php
-include ('controller/MainController.php');
-?>
-
+<?php include ('controller/MainController.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +7,7 @@ include ('controller/MainController.php');
     <title>Title</title>
 </head>
 <body>
+<a id="link" href="index.html">Go Back</a>
 <?php listUsers(); ?>
 </body>
 </html>

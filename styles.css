@@ -1,44 +1,54 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
 a {
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle
+    text-decoration: none;
 }
-
-
-div {
-    border: 2px solid red;
-    padding: 10px;
-    border-radius: 25px;
-    background-color: #04AA6D;
+a#link {
+    margin-top: 8px;
     color: white;
-
-    margin: 18px 0;
-
+    text-decoration: none;
+    font-weight: bold;
+}
+a#link:hover {
+    color: #B01EFF;
     cursor: pointer;
-    /*width: 30%;*/
-    opacity: 0.9;
-    height: 10em;
-    position: relative
 }
+.button {
+    cursor: pointer;
+    width: 250px;
+    height: 75px;
+    background: white;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
 
-div:hover {
-    opacity:1;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
-
-
-div p {
+td a {
+    display: block;
+    color: white;
     text-align: center;
-    vertical-align: center;
-    margin: 0;
-
-    top: 50%;
-    transform: translate(0, -50%) }
-html, body {
-
-    /*oldal a kepernyo teljes szelessegeben jelenik meg*/
-    width:100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f7f7f7;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #354a73;
 }
+td a:hover {
+    background-color: #646464;
+}
+.button :hover{
+    background: linear-gradient(90deg, #331b9a 0%, #77acff 100%);
+}
+
+
