@@ -7,7 +7,7 @@
     <title>Title</title>
 </head>
 <body>
-<a id="link" href="index.html">Go Back</a>
+<a class="link" href="index.html">Go Back</a>
 <?php listUsers(); ?>
 </body>
 </html>
