@@ -20,6 +20,10 @@ a.link:hover {
     color: #B01EFF;
     cursor: pointer;
 }
+
+.button:hover{
+    background: linear-gradient(90deg, #534496 0%, #d6e1ff 100%);
+}
 .button {
     cursor: pointer;
     width: 250px;
@@ -27,7 +31,7 @@ a.link:hover {
     background: white;
     border-radius: 35px;
     background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
-    animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+
 
     padding-top: 16px;
     display: flex;
@@ -36,16 +40,20 @@ a.link:hover {
     align-items: center;
     font-size: 50px;
 }
+
+
+
 td a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #354a73;
+    background-color: #3F2B96FF;
 }
 td a:hover {
-    background-color: #646464;
+    color: black;
+    background-color: #A8C0FFFF;
 }
 .button :hover{
     background: linear-gradient(90deg, #331b9a 0%, #77acff 100%);
