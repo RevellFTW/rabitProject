@@ -12,7 +12,13 @@ function getAds($conn)
     else{?>
         <table>
         <tbody>
-            <?php while(($row = mysqli_fetch_assoc($res)) && $rowName = mysqli_fetch_assoc($resName) ){?>
+
+            <?php
+            /**
+             * @res : All rows from advertisements, is an sql query.
+             * @row, @rowName : A single row from the tables.
+             */
+            while(($row = mysqli_fetch_assoc($res)) && $rowName = mysqli_fetch_assoc($resName) ){?>
                 <tr>
                 <td><a><?php echo $rowName['name']?></a></td>
                 <td><a><?php echo $row['title']?></a></td>

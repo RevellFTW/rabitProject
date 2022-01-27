@@ -10,6 +10,10 @@
             ?>
             <table>
                 <tbody><?php
+                /**
+                 * @res : All rows from advertisements, is an sql query.
+                 * @row : A single row from the users table
+                 */
                 while($row = mysqli_fetch_assoc($res) ){?>
                     <tr>
                         <td><a><?php echo $row['name']?></a></td>
